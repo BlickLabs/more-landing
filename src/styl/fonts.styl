@@ -82,7 +82,7 @@
   color $mGray
   font-size $fsH5
   letter-spacing 2.8px
-  line-height 25px
+  line-height 17px
   text-transform uppercase
 
 .fs-h3-footer
@@ -124,3 +124,21 @@
   color $mGrayLight
   font-size $fsMicro
   letter-spacing 0.1px
+
+@media screen and (max-width 768px)
+  .fs-giga
+    font-size $fsGigaM
+    line-height 35px
+
+  .fs-mega
+    font-size $fsMegaM
+    line-height 30px
+
+  .fs-kilo
+    font-size $fsKiloM
+    line-height 30px
+
+@media screen and (min-width 769px) and (max-width 940px)
+  .fs-giga
+    font-size $fsGigaT
+    line-height 55px
