@@ -8,8 +8,9 @@
     
     <link rel="stylesheet" href="css/more-landing.libs.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <title>more-landing</title>
+    <link runat="server" rel="shortcut icon" href="img/favicon/favicon-more.png" type="image/x-icon"/>
+    <link runat="server" rel="icon" href="img/favicon/favicon-more.png" type="image/ico"/>
+    <title>Vende en línea - More Co.</title>
   </head>
   <body>
     <div id="page">
@@ -43,11 +44,44 @@
     <div class="cover-title-container">
       <h1 class="fs-mega metropolis-medium">Vende en línea, nosotros hacemos tu tienda</h1>
     </div>
-    <a href="">
+    <a href="#contact" class="go-section">
       <button class="generic-button fs-h4 metropolis-semibold">Contactar</button>
     </a>
-    <div class="cover-cards">
-      <div class="cover-cards-content">
+    <div class="cover-card-shopify cover-card-desktop">
+      <img class="cover-card-shopify-logo" src="img/logos/logo-shopify-experts.png" alt="Shopify experts logo">
+      <div class="cover-card-shopify-text-container">
+        <p class="$mGrayLight fs-milli">
+          Esperamos ver tu proyecto en nuestro portafolio muy pronto
+        </p>
+      </div>
+      <img class="cover-card-shopify-laptop" src="img/icons/shopify-laptop.png" alt="Laptop image">
+    </div>
+    <div class="cover-card-contact cover-card-desktop" id="contact-card">
+      <h4 class="fs-h1 athelas-bold">Contacto</h4>
+      <div class="cover-card-contact-separator"></div>
+      <div>
+        <div class="cover-card-contact-info-container">
+          <div class="cover-card-contact-icon-container">
+            <img class="cover-card-contact-icon-phone" src="img/icons/icon-phone.png" alt="Phone icon">
+          </div>
+          <div class="cover-card-contact-phone">
+            <span class="fs-h6 metropolis-medium">55 4094 0404</span><br>
+            <span class="fs-micro metropolis-regular">Lun - Vie: 8:00 - 20:00</span>
+          </div>
+        </div>
+        <div class="cover-card-contact-info-container">
+          <div class="cover-card-contact-icon-container">
+            <img class="cover-card-contact-icon-mail" src="img/icons/icon-mail.png" alt="Phone icon">
+          </div>
+          <div>
+            <span class="fs-h6 metropolis-medium">Correo</span><br>
+            <span class="fs-micro metropolis-regular">hola@getmore.mx</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cover-cards-carousel-container">
+      <div class="cover-cards-carousel owl-carousel">
         <div class="cover-card-shopify">
           <img class="cover-card-shopify-logo" src="img/logos/logo-shopify-experts.png" alt="Shopify experts logo">
           <div class="cover-card-shopify-text-container">
@@ -86,7 +120,9 @@
   </div>
 
   <div class="benefits" id="benefits">
-    <h3 class="fs-h3-gray athelas-bold">aprovecha todo lo que tenemos para ti</h3>
+    <div class="benefits-subtitle-container">
+      <h3 class="fs-h3-gray athelas-bold">aprovecha todo lo que tenemos para ti</h3>
+    </div>
     <h2 class="fs-kilo metropolis-medium">Beneficios</h2>
     <div class="benefits-cards-container">
       <div class="benefits-cards-content">
@@ -133,7 +169,7 @@
       <h2 class="fs-giga metropolis-regular">Comienza a vender hoy mismo</h2>
     </div>
     <div class="begins-button-container">
-      <a href="">
+      <a href="#contact" class="go-section">
         <button class="generic-button fs-h4 metropolis-semibold">Contáctanos</button>
       </a>
     </div>
@@ -142,7 +178,9 @@
   <div class="ourwork" id="our-work">
     <div class="ourwork-content">
       <div class="ourwork-texts-container">
-        <h3 class="fs-h3-gray athelas-bold">algunos de nuestros clientes</h3>
+        <div class="ourwork-subtitle-container">
+          <h3 class="fs-h3-gray athelas-bold">algunos de nuestros clientes</h3>
+        </div>
         <h2 class="fs-kilo metropolis-medium">Nuestro trabajo</h2>
       </div>
       <div class="ourwork-carousel owl-carousel">
@@ -213,7 +251,7 @@
         <div class="contact-subtitle-container">
           <h2 class="fs-kilo metropolis-medium">¿Qués esperas para tener tu propia tienda en línea?</h2>
         </div>
-        <form>
+        <form name="more-landing-form" method="post" action="http://integrations.blick.mx/morelanding/contact/">
           <div class="contact-form-content">
             <label class="fs-h2 metropolis-regular" for="name">Nombre</label>
             <input class="contact-form-input fs-h2 metropolis-regular" type="text" name="name" id="name" required>

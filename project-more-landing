@@ -1,0 +1,13 @@
+server {
+  listen 80;
+  listen [::]:80;
+
+  root /home/static/more-landing;
+  index index.html index.htm;
+
+  server_name www.sandbox.more-landing.getmore.mx sandbox.more-landing.getmore.mx www.shop.getmore.mx shop.getmore.mx;
+
+  location / {
+      try_files $uri $uri/ =404;
+  }
+}
