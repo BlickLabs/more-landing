@@ -2,20 +2,25 @@ var ourworkCarousel = $('.ourwork-carousel');
 
 ourworkCarousel.owlCarousel ({
   loop: false,
-  responsiveClass: true,
   nav: true,
   navText: ['<img class="ourwork-navigation-arrows" src="img/icons/arrow-left.png" />', '<img class="ourwork-navigation-arrows" src="img/icons/arrow-right.png" />'],
   dots: true,
   margin: 36,
   responsive:{
-    0:{
-      items:3,
+    0: {
+      items: 1,
+      loop: true,
+      center: true,
+      autoWidth: true,
     },
-    600:{
-      items:3,
+    600: {
+      items: 1,
+      loop: true,
+      center: true,
+      autoWidth: true,
     },
-    1000:{
-      items:3,
+    1000: {
+      items: 3,
     }
   }
 });
