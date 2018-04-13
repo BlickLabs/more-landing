@@ -2,7 +2,7 @@ var last_known_scroll_position = 0;
 var ticking = false;
 
 var siteNavbar = document.querySelector('.navbar');
-var contactCard = document.querySelector('.cover-card-contact');
+var contactCard = document.querySelector('#contact-card');
 
 //navbar-fixed-top
 function doSomething(scroll_pos) {
@@ -33,48 +33,3 @@ window.addEventListener('scroll', function(e) {
   }
   ticking = true;
 });
-/*
-function showMenu() {
-  document.querySelector('#menuContainer').style.width = '85%';
-  document.querySelector('#hamburgerMenu').style.display = 'none';
-}
-
-function hideMenu() {
-  document.querySelector('#menuContainer').style.width = '0%';
-  document.querySelector('#hamburgerMenu').style.display = 'inline';
-}
-
-window.addEventListener('click', function(e) {
-  if (!e.target.dataset.hasOwnProperty('attribute')) {
-    hideMenu();
-  }
-});
-
-//Events of touchstart to mobile version
-
-var showHamburger = document.querySelector('#hamburgerMenu');
-
-showHamburger.addEventListener('touchstart', function(e) {
-  e.preventDefault();
-  showMenu();
-});
-
-var hideHamburger = document.querySelector('#hideHamburger');
-
-hideHamburger.addEventListener('touchstart', function(e) {
-  e.preventDefault();
-  hideMenu();
-});
-
-// Events of click to desktop version
-
-showHamburger.addEventListener('click', function(e) {
-  e.preventDefault();
-  showMenu();
-});
-
-hideHamburger.addEventListener('click', function(e) {
-  e.preventDefault();
-  hideMenu();
-});
-*/

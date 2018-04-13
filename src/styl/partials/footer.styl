@@ -42,4 +42,16 @@
   &-email
     &-container
       margin-bottom 28px
-      
+
+@media screen and (max-width 768px)
+  .footer
+    &-links
+      &-container
+        flex-wrap wrap
+        height 55px
+        justify-content center
+        max-width 330px
+
+    &-separator
+      &:nth-child(10)
+        display none
