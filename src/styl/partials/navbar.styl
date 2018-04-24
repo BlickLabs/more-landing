@@ -1,3 +1,5 @@
+.whatsapp-msj
+  display none
 .navbar
   align-items center
   background transparent
@@ -23,12 +25,25 @@
 
     &-content
       margin-left 35px
-
+      a:hover
+        span
+          color $mBlueLight
   &-scroll
     background-color $mWhite
     box-shadow 0 6px 8px 0 rgba(0,0,0,.2)
 
 @media screen and (max-width 696px)
+  .header-logo
+    position relative
+    width 100%
+  .whatsapp-msj
+    display block
+    position absolute
+    bottom: 0;
+    top: 0;
+    right: 10%;
+    img
+      width 30px
   .navbar
     flex-direction column
     justify-content center
@@ -37,6 +52,8 @@
     &-logo
       height 24px
       width 100px
+      margin: 0 auto;
+      display: block;
 
     &-links
       &-container
